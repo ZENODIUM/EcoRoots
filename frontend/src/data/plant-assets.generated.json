@@ -1,0 +1,1537 @@
+{
+ "generated_by": "scripts/plant_assets.py",
+ "source_dir": "Plants",
+ "archives_seen": [
+  "Flower Group by Quaternius - hfPzQAedOe.zip"
+ ],
+ "assets": [
+  {
+   "id": "aloe",
+   "file": "plants/aloe.glb",
+   "label": "Aloe plant by Poly by Google",
+   "source_file": "Aloe plant by Poly by Google - 6hYjnEpV-CC.glb",
+   "derived_from": null,
+   "bytes": 307564,
+   "sha256": "593fdaa954ead265",
+   "archetypes": [
+    "succulent",
+    "rosette"
+   ],
+   "licence": {
+    "attribution": "Aloe plant by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/6hYjnEpV-CC)",
+    "licence": "CC-BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Poly by Google",
+    "source_url": "https://poly.pizza/m/6hYjnEpV-CC"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 714,
+   "bounds_min": [
+    -1.1341,
+    -0.2377,
+    -0.8841
+   ],
+   "bounds_max": [
+    0.8651,
+    0.6694,
+    0.9567
+   ],
+   "size": [
+    1.9992,
+    0.9071,
+    1.8407
+   ],
+   "height": 0.9071,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "big-leaf-plant",
+   "file": "plants/big-leaf-plant.glb",
+   "label": "Big Leaf Plant by reyshapes",
+   "source_file": "Big Leaf Plant by reyshapes - aKIm5k6l5F.glb",
+   "derived_from": null,
+   "bytes": 52428,
+   "sha256": "ace438ba66902301",
+   "archetypes": [
+    "broadleaf-herb",
+    "broadleaf-tree"
+   ],
+   "licence": {
+    "attribution": "Big Leaf Plant by reyshapes (https://poly.pizza/m/aKIm5k6l5F)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "reyshapes",
+    "source_url": "https://poly.pizza/m/aKIm5k6l5F"
+   },
+   "meshes": 1,
+   "materials": 14,
+   "animations": 0,
+   "triangles": 732,
+   "bounds_min": [
+    -3.708,
+    -1.4078,
+    -4.5927
+   ],
+   "bounds_max": [
+    3.298,
+    6.0946,
+    3.4788
+   ],
+   "size": [
+    7.0059,
+    7.5024,
+    8.0715
+   ],
+   "height": 7.5024,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "flowering-bush",
+   "file": "plants/flowering-bush.glb",
+   "label": "Bush with Flowers by Quaternius",
+   "source_file": "Bush with Flowers by Quaternius - U1ymDy8tbY.glb",
+   "derived_from": null,
+   "bytes": 809728,
+   "sha256": "a7f0e022aa77a70a",
+   "archetypes": [
+    "bush",
+    "shrub",
+    "flowering-herb"
+   ],
+   "licence": {
+    "attribution": "Bush with Flowers by Quaternius (https://poly.pizza/m/U1ymDy8tbY)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/U1ymDy8tbY"
+   },
+   "meshes": 1,
+   "materials": 2,
+   "animations": 0,
+   "triangles": 1368,
+   "bounds_min": [
+    -0.9235,
+    -0.2347,
+    -0.9744
+   ],
+   "bounds_max": [
+    0.9914,
+    1.3471,
+    0.9908
+   ],
+   "size": [
+    1.9148,
+    1.5818,
+    1.9651
+   ],
+   "height": 1.5818,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "dry-tree",
+   "file": "plants/dry-tree.glb",
+   "label": "Dead Tree by Quaternius",
+   "source_file": "Dead Tree by Quaternius - Mcd2zYqyww.glb",
+   "derived_from": null,
+   "bytes": 2623500,
+   "sha256": "7650b888de1b85a3",
+   "archetypes": [
+    "dry-woody-tree",
+    "broadleaf-tree"
+   ],
+   "licence": {
+    "attribution": "Dead Tree by Quaternius (https://poly.pizza/m/Mcd2zYqyww)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/Mcd2zYqyww"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 6557,
+   "bounds_min": [
+    -2.3323,
+    -0.3356,
+    -2.5229
+   ],
+   "bounds_max": [
+    4.3973,
+    11.1527,
+    3.8557
+   ],
+   "size": [
+    6.7296,
+    11.4882,
+    6.3785
+   ],
+   "height": 11.4882,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "fern",
+   "file": "plants/fern.glb",
+   "label": "fern plant by Geoffrey Bell",
+   "source_file": "fern plant by Geoffrey Bell - fQ9cPdkwvAY.glb",
+   "derived_from": null,
+   "bytes": 164984,
+   "sha256": "903ed147305a3c92",
+   "archetypes": [
+    "fern",
+    "herb"
+   ],
+   "licence": {
+    "attribution": "fern plant by Geoffrey Bell [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/fQ9cPdkwvAY)",
+    "licence": "CC-BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Geoffrey Bell",
+    "source_url": "https://poly.pizza/m/fQ9cPdkwvAY"
+   },
+   "meshes": 28,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 1842,
+   "bounds_min": [
+    -1.9318,
+    -2.2931,
+    -1.3063
+   ],
+   "bounds_max": [
+    2.5659,
+    1.9462,
+    1.3258
+   ],
+   "size": [
+    4.4978,
+    4.2393,
+    2.6321
+   ],
+   "height": 4.2393,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "flower-single",
+   "file": "plants/flower-single.glb",
+   "label": "Flower Single by Quaternius",
+   "source_file": "Flower Single by Quaternius - GvfHo0roi3.glb",
+   "derived_from": null,
+   "bytes": 1237772,
+   "sha256": "a825c35caccf8054",
+   "archetypes": [
+    "flowering-herb"
+   ],
+   "licence": {
+    "attribution": "Flower Single by Quaternius (https://poly.pizza/m/GvfHo0roi3)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/GvfHo0roi3"
+   },
+   "meshes": 1,
+   "materials": 2,
+   "animations": 0,
+   "triangles": 642,
+   "bounds_min": [
+    -0.505,
+    -0.0304,
+    -0.4018
+   ],
+   "bounds_max": [
+    0.5673,
+    2.3887,
+    0.3711
+   ],
+   "size": [
+    1.0723,
+    2.4192,
+    0.7729
+   ],
+   "height": 2.4192,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "flower-single-2",
+   "file": "plants/flower-single-2.glb",
+   "label": "Flower Single by Quaternius",
+   "source_file": "Flower Single by Quaternius - rHBoS64rRL.glb",
+   "derived_from": null,
+   "bytes": 1222572,
+   "sha256": "d7f6d9bb536b99ff",
+   "archetypes": [
+    "flowering-herb"
+   ],
+   "licence": {
+    "attribution": "Flower Single by Quaternius (https://poly.pizza/m/rHBoS64rRL)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/rHBoS64rRL"
+   },
+   "meshes": 1,
+   "materials": 2,
+   "animations": 0,
+   "triangles": 285,
+   "bounds_min": [
+    -0.4807,
+    -0.0183,
+    -0.5207
+   ],
+   "bounds_max": [
+    0.4259,
+    2.0499,
+    0.3568
+   ],
+   "size": [
+    0.9066,
+    2.0682,
+    0.8775
+   ],
+   "height": 2.0682,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "flowers",
+   "file": "plants/flowers.glb",
+   "label": "Flowers by CreativeTrio",
+   "source_file": "Flowers by CreativeTrio - RP8p3h7JHJ.glb",
+   "derived_from": null,
+   "bytes": 53324,
+   "sha256": "ce8aa5de34d238bf",
+   "archetypes": [
+    "flowering-herb",
+    "herb"
+   ],
+   "licence": {
+    "attribution": "Flowers by CreativeTrio (https://poly.pizza/m/RP8p3h7JHJ)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "CreativeTrio",
+    "source_url": "https://poly.pizza/m/RP8p3h7JHJ"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 496,
+   "bounds_min": [
+    -0.1151,
+    -0.0,
+    -0.0746
+   ],
+   "bounds_max": [
+    0.1109,
+    0.3962,
+    0.0924
+   ],
+   "size": [
+    0.226,
+    0.3962,
+    0.167
+   ],
+   "height": 0.3962,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "palm",
+   "file": "plants/palm.glb",
+   "label": "Palm tree by Poly by Google",
+   "source_file": "Palm tree by Poly by Google - 2RUnO1Yi99P.glb",
+   "derived_from": null,
+   "bytes": 1805452,
+   "sha256": "0b32c28e3498e83a",
+   "archetypes": [
+    "palm"
+   ],
+   "licence": {
+    "attribution": "Palm tree by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/2RUnO1Yi99P)",
+    "licence": "CC-BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Poly by Google",
+    "source_url": "https://poly.pizza/m/2RUnO1Yi99P"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 2182,
+   "bounds_min": [
+    -13.9664,
+    -0.0,
+    -8.2656
+   ],
+   "bounds_max": [
+    1.3169,
+    17.2396,
+    8.2798
+   ],
+   "size": [
+    15.2833,
+    17.2397,
+    16.5455
+   ],
+   "height": 17.2397,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "plant",
+   "file": "plants/plant.glb",
+   "label": "Plant by Quaternius",
+   "source_file": "Plant by Quaternius - VwXvoIpCHP.glb",
+   "derived_from": null,
+   "bytes": 73324,
+   "sha256": "dd76c853f167b495",
+   "archetypes": [
+    "herb",
+    "tuft"
+   ],
+   "licence": {
+    "attribution": "Plant by Quaternius (https://poly.pizza/m/VwXvoIpCHP)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/VwXvoIpCHP"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 1608,
+   "bounds_min": [
+    -1.0329,
+    -0.0124,
+    -0.8481
+   ],
+   "bounds_max": [
+    1.087,
+    2.9658,
+    0.5955
+   ],
+   "size": [
+    2.1199,
+    2.9782,
+    1.4436
+   ],
+   "height": 2.9782,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "small-plant",
+   "file": "plants/small-plant.glb",
+   "label": "Small Plant by Quaternius",
+   "source_file": "Small Plant by Quaternius - MZdeiQApSb.glb",
+   "derived_from": null,
+   "bytes": 14664,
+   "sha256": "0c12e3e9bcf540f4",
+   "archetypes": [
+    "herb",
+    "rosette",
+    "tuft"
+   ],
+   "licence": {
+    "attribution": "Small Plant by Quaternius (https://poly.pizza/m/MZdeiQApSb)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/MZdeiQApSb"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 464,
+   "bounds_min": [
+    -0.5148,
+    -0.0017,
+    -0.5162
+   ],
+   "bounds_max": [
+    0.5148,
+    0.285,
+    0.5162
+   ],
+   "size": [
+    1.0296,
+    0.2867,
+    1.0325
+   ],
+   "height": 0.2867,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "vines",
+   "file": "plants/vines.glb",
+   "label": "Vines by Poly by Google",
+   "source_file": "Vines by Poly by Google - cnimalnLIEA.glb",
+   "derived_from": null,
+   "bytes": 3963700,
+   "sha256": "fac87eff370f9dcc",
+   "archetypes": [
+    "vine"
+   ],
+   "licence": {
+    "attribution": "Vines by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/cnimalnLIEA)",
+    "licence": "CC-BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Poly by Google",
+    "source_url": "https://poly.pizza/m/cnimalnLIEA"
+   },
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 1436,
+   "bounds_min": [
+    -6.8622,
+    0.0,
+    -2.4216
+   ],
+   "bounds_max": [
+    6.8622,
+    6.042,
+    2.4216
+   ],
+   "size": [
+    13.7243,
+    6.042,
+    4.8431
+   ],
+   "height": 6.042,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "flower-group",
+   "file": "plants/flower-group.glb",
+   "label": "Flower Group by Quaternius",
+   "source_file": "Flower Group by Quaternius - hfPzQAedOe.glb",
+   "derived_from": "Flower Group zip (FBX converted with FBX2glTF 0.9.7)",
+   "bytes": 1242384,
+   "sha256": "c86e91aa96e6c63c",
+   "archetypes": [
+    "flowering-herb"
+   ],
+   "licence": {
+    "attribution": "Flower Group by Quaternius (https://poly.pizza/m/hfPzQAedOe)",
+    "licence": "CC0 1.0 (Public Domain)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licence_verified": "2026-11-07",
+    "author": "Quaternius",
+    "source_url": "https://poly.pizza/m/hfPzQAedOe"
+   },
+   "meshes": 1,
+   "materials": 2,
+   "animations": 0,
+   "triangles": 755,
+   "bounds_min": [
+    -0.6136,
+    -0.0346,
+    -0.8018
+   ],
+   "bounds_max": [
+    0.8749,
+    2.0203,
+    0.7894
+   ],
+   "size": [
+    1.4885,
+    2.0548,
+    1.5911
+   ],
+   "height": 2.0548,
+   "origin_at_base": true,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "ginseng",
+   "file": "plants/ginseng.glb",
+   "label": "American Ginseng",
+   "source_file": "Plants New/American Ginseng.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 458312,
+   "sha256": "1deea75cb4925af9",
+   "archetypes": [
+    "herb",
+    "understorey-herb"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Panax quinquefolius"
+   ],
+   "display_height": 0.75,
+   "footprint": 0.7,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19998,
+   "bounds_min": [
+    -0.5881,
+    -0.9996,
+    -0.3574
+   ],
+   "bounds_max": [
+    0.5854,
+    0.9934,
+    0.3525
+   ],
+   "size": [
+    1.1735,
+    1.993,
+    0.71
+   ],
+   "height": 1.993,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "colchicum",
+   "file": "plants/colchicum.glb",
+   "label": "Colchicum autumnale",
+   "source_file": "Plants New/Colchicum autumnale.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 377752,
+   "sha256": "9a4d797adf17f9fa",
+   "archetypes": [
+    "herb",
+    "bulb",
+    "flowering-herb"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Colchicum autumnale"
+   ],
+   "display_height": 0.6,
+   "footprint": 0.5,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 20000,
+   "bounds_min": [
+    -0.2309,
+    -0.9996,
+    -0.2041
+   ],
+   "bounds_max": [
+    0.2269,
+    0.9888,
+    0.1993
+   ],
+   "size": [
+    0.4578,
+    1.9884,
+    0.4034
+   ],
+   "height": 1.9884,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "echinacea",
+   "file": "plants/echinacea.glb",
+   "label": "Echinacea",
+   "source_file": "Plants New/Echinacea.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 580660,
+   "sha256": "575057c4ceb39d20",
+   "archetypes": [
+    "flowering-herb"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Echinacea angustifolia",
+    "Echinacea purpurea",
+    "Echinacea pallida"
+   ],
+   "display_height": 1.0,
+   "footprint": 0.6,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 20000,
+   "bounds_min": [
+    -0.8074,
+    -0.9981,
+    -0.861
+   ],
+   "bounds_max": [
+    0.8091,
+    0.9914,
+    0.8759
+   ],
+   "size": [
+    1.6164,
+    1.9895,
+    1.7369
+   ],
+   "height": 1.9895,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "frankincense",
+   "file": "plants/frankincense.glb",
+   "label": "Frankincense",
+   "source_file": "Plants New/Frankincense.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 707948,
+   "sha256": "c898cbe2fcaa2f3d",
+   "archetypes": [
+    "dry-woody-tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Boswellia papyrifera"
+   ],
+   "display_height": 2.3,
+   "footprint": 2.0,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 21922,
+   "bounds_min": [
+    -0.7855,
+    -0.9994,
+    -0.7555
+   ],
+   "bounds_max": [
+    0.7737,
+    0.9555,
+    0.8245
+   ],
+   "size": [
+    1.5592,
+    1.9549,
+    1.58
+   ],
+   "height": 1.9549,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "amla",
+   "file": "plants/amla.glb",
+   "label": "Indian Gooseberry",
+   "source_file": "Plants New/Indian Gooseberry.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 859060,
+   "sha256": "5e4da79e6373b90d",
+   "archetypes": [
+    "broadleaf-tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Phyllanthus emblica"
+   ],
+   "display_height": 2.6,
+   "footprint": 2.2,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 29750,
+   "bounds_min": [
+    -0.7184,
+    -0.9983,
+    -0.729
+   ],
+   "bounds_max": [
+    0.729,
+    0.9411,
+    0.6644
+   ],
+   "size": [
+    1.4473,
+    1.9393,
+    1.3934
+   ],
+   "height": 1.9393,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "jatamansi",
+   "file": "plants/jatamansi.glb",
+   "label": "Jatamansi",
+   "source_file": "Plants New/Jatamansi.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 613004,
+   "sha256": "0ac47789d27c8feb",
+   "archetypes": [
+    "herb",
+    "rosette",
+    "alpine-herb"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Nardostachys jatamansi"
+   ],
+   "display_height": 0.6,
+   "footprint": 0.8,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19926,
+   "bounds_min": [
+    -0.9464,
+    -0.9974,
+    -0.9555
+   ],
+   "bounds_max": [
+    0.9464,
+    0.9917,
+    0.9533
+   ],
+   "size": [
+    1.8927,
+    1.9891,
+    1.9088
+   ],
+   "height": 1.9891,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "khaya",
+   "file": "plants/khaya.glb",
+   "label": "Khaya",
+   "source_file": "Plants New/Khaya.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 742888,
+   "sha256": "95fd24fd60581be2",
+   "archetypes": [
+    "broadleaf-tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Khaya senegalensis"
+   ],
+   "display_height": 2.7,
+   "footprint": 2.3,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 29080,
+   "bounds_min": [
+    -0.8213,
+    -0.9994,
+    -0.7717
+   ],
+   "bounds_max": [
+    0.8245,
+    0.9881,
+    0.8404
+   ],
+   "size": [
+    1.6459,
+    1.9875,
+    1.6122
+   ],
+   "height": 1.9875,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "arnica",
+   "file": "plants/arnica.glb",
+   "label": "Mountain Arnica",
+   "source_file": "Plants New/Mountain Arnica.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 401892,
+   "sha256": "8576474cb290e946",
+   "archetypes": [
+    "flowering-herb",
+    "rosette"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Arnica montana"
+   ],
+   "display_height": 0.75,
+   "footprint": 0.6,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 20000,
+   "bounds_min": [
+    -0.9969,
+    -0.8566,
+    -0.9967
+   ],
+   "bounds_max": [
+    0.9908,
+    0.8381,
+    0.9918
+   ],
+   "size": [
+    1.9877,
+    1.6947,
+    1.9885
+   ],
+   "height": 1.6947,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "primula",
+   "file": "plants/primula.glb",
+   "label": "Primula",
+   "source_file": "Plants New/Primula.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 436276,
+   "sha256": "7a370921696a53e3",
+   "archetypes": [
+    "flowering-herb",
+    "rosette"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Primula veris"
+   ],
+   "display_height": 0.55,
+   "footprint": 0.55,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 20000,
+   "bounds_min": [
+    -0.9033,
+    -0.9955,
+    -0.9348
+   ],
+   "bounds_max": [
+    0.9097,
+    0.9518,
+    0.9188
+   ],
+   "size": [
+    1.813,
+    1.9473,
+    1.8536
+   ],
+   "height": 1.9473,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "prunus",
+   "file": "plants/prunus.glb",
+   "label": "Prunus",
+   "source_file": "Plants New/Prunus.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 749844,
+   "sha256": "d3eea60013cd7fa2",
+   "archetypes": [
+    "broadleaf-tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Prunus africana"
+   ],
+   "display_height": 2.7,
+   "footprint": 2.3,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 27966,
+   "bounds_min": [
+    -0.5328,
+    -0.9998,
+    -0.5002
+   ],
+   "bounds_max": [
+    0.5545,
+    0.9895,
+    0.5337
+   ],
+   "size": [
+    1.0873,
+    1.9893,
+    1.0339
+   ],
+   "height": 1.9893,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "sabal",
+   "file": "plants/sabal.glb",
+   "label": "Sabal",
+   "source_file": "Plants New/Sabal.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 610604,
+   "sha256": "bc94c2a7959c097d",
+   "archetypes": [
+    "palm"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "species",
+   "species": [
+    "Sabal yapa"
+   ],
+   "display_height": 2.5,
+   "footprint": 2.3,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19924,
+   "bounds_min": [
+    -0.9888,
+    -0.9586,
+    -0.8358
+   ],
+   "bounds_max": [
+    0.9687,
+    0.882,
+    0.7501
+   ],
+   "size": [
+    1.9575,
+    1.8406,
+    1.5859
+   ],
+   "height": 1.8406,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-cactus",
+   "file": "plants/g-cactus.glb",
+   "label": "Cactus",
+   "source_file": "Plants New/Generic/Cactus.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 347944,
+   "sha256": "6e07bf0efcc73826",
+   "archetypes": [
+    "succulent",
+    "cactus"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 1.0,
+   "footprint": 0.6,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 20000,
+   "bounds_min": [
+    -0.9981,
+    -0.965,
+    -0.6639
+   ],
+   "bounds_max": [
+    0.9945,
+    0.9464,
+    0.6573
+   ],
+   "size": [
+    1.9926,
+    1.9114,
+    1.3212
+   ],
+   "height": 1.9114,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-conifer",
+   "file": "plants/g-conifer.glb",
+   "label": "Conifer",
+   "source_file": "Plants New/Generic/Conifer.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 506536,
+   "sha256": "520d20e3673f923f",
+   "archetypes": [
+    "conifer",
+    "tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 2.8,
+   "footprint": 1.7,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19998,
+   "bounds_min": [
+    -0.9559,
+    -0.997,
+    -0.7795
+   ],
+   "bounds_max": [
+    0.9584,
+    0.9888,
+    0.8332
+   ],
+   "size": [
+    1.9143,
+    1.9858,
+    1.6127
+   ],
+   "height": 1.9858,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-flowering-herb",
+   "file": "plants/g-flowering-herb.glb",
+   "label": "Flowering Herb",
+   "source_file": "Plants New/Generic/Flowering_Herb.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 537488,
+   "sha256": "29cb9a306d55051b",
+   "archetypes": [
+    "flowering-herb",
+    "herb"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 0.85,
+   "footprint": 0.6,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19992,
+   "bounds_min": [
+    -0.3946,
+    -0.9987,
+    -0.3829
+   ],
+   "bounds_max": [
+    0.3897,
+    0.9933,
+    0.3737
+   ],
+   "size": [
+    0.7843,
+    1.992,
+    0.7566
+   ],
+   "height": 1.992,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-low-herb",
+   "file": "plants/g-low-herb.glb",
+   "label": "Low Herb",
+   "source_file": "Plants New/Generic/Low_Herb.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 320768,
+   "sha256": "5243aa4331d295cd",
+   "archetypes": [
+    "herb",
+    "rosette"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 0.5,
+   "footprint": 0.7,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 20000,
+   "bounds_min": [
+    -0.9811,
+    -0.5802,
+    -0.9941
+   ],
+   "bounds_max": [
+    0.9796,
+    0.5985,
+    0.9872
+   ],
+   "size": [
+    1.9607,
+    1.1787,
+    1.9813
+   ],
+   "height": 1.1787,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-palm",
+   "file": "plants/g-palm.glb",
+   "label": "Palm",
+   "source_file": "Plants New/Generic/Palm.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 570644,
+   "sha256": "db25344532c78c21",
+   "archetypes": [
+    "palm"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 2.5,
+   "footprint": 2.3,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19992,
+   "bounds_min": [
+    -0.6722,
+    -0.9971,
+    -0.6747
+   ],
+   "bounds_max": [
+    0.6577,
+    0.9835,
+    0.6494
+   ],
+   "size": [
+    1.3299,
+    1.9806,
+    1.3241
+   ],
+   "height": 1.9806,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-shrub",
+   "file": "plants/g-shrub.glb",
+   "label": "Shrub",
+   "source_file": "Plants New/Generic/Shrub.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 823372,
+   "sha256": "b849fb3dc3044e7b",
+   "archetypes": [
+    "shrub",
+    "bush"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 1.2,
+   "footprint": 1.2,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 29270,
+   "bounds_min": [
+    -0.9093,
+    -0.9941,
+    -0.851
+   ],
+   "bounds_max": [
+    0.8775,
+    0.9888,
+    0.9305
+   ],
+   "size": [
+    1.7868,
+    1.9829,
+    1.7815
+   ],
+   "height": 1.9829,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-tropical-tree",
+   "file": "plants/g-tropical-tree.glb",
+   "label": "Tropical broadleaf tree",
+   "source_file": "Plants New/Generic/Tropical_broadleaf_tree.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 692996,
+   "sha256": "c71b7200359a2972",
+   "archetypes": [
+    "broadleaf-tree",
+    "tropical-tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 2.7,
+   "footprint": 2.3,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 27730,
+   "bounds_min": [
+    -0.8828,
+    -0.9994,
+    -0.7608
+   ],
+   "bounds_max": [
+    0.8617,
+    0.9905,
+    0.8297
+   ],
+   "size": [
+    1.7445,
+    1.9899,
+    1.5905
+   ],
+   "height": 1.9899,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-weedy-herb",
+   "file": "plants/g-weedy-herb.glb",
+   "label": "Weedy Herb",
+   "source_file": "Plants New/Generic/Weedy_Herb.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 421584,
+   "sha256": "f1b8d878d73108b7",
+   "archetypes": [
+    "herb",
+    "annual"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 0.8,
+   "footprint": 0.6,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 19992,
+   "bounds_min": [
+    -0.3553,
+    -0.9991,
+    -0.2558
+   ],
+   "bounds_max": [
+    0.3313,
+    0.9905,
+    0.2579
+   ],
+   "size": [
+    0.6867,
+    1.9896,
+    0.5137
+   ],
+   "height": 1.9896,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  },
+  {
+   "id": "g-temperate-tree",
+   "file": "plants/g-temperate-tree.glb",
+   "label": "temperate broadleaf tree",
+   "source_file": "Plants New/Generic/temperate_broadleaf_tree.glb",
+   "derived_from": "simplified, normals added, 1024 px texture, meshopt (scripts/build_plant_models.py)",
+   "bytes": 956188,
+   "sha256": "0a6a789489db0c13",
+   "archetypes": [
+    "broadleaf-tree",
+    "temperate-tree"
+   ],
+   "licence": {
+    "attribution": "AI-generated 3D model supplied by the project author. An illustration, not a botanical reconstruction.",
+    "licence": "Project asset (AI-generated)",
+    "licence_url": null,
+    "author": "EthnoHarvest project",
+    "source_url": null
+   },
+   "kind": "generic",
+   "species": [],
+   "display_height": 2.7,
+   "footprint": 2.3,
+   "meshes": 1,
+   "materials": 1,
+   "animations": 0,
+   "triangles": 34308,
+   "bounds_min": [
+    -0.8479,
+    -0.9963,
+    -0.8516
+   ],
+   "bounds_max": [
+    0.8514,
+    0.9888,
+    0.842
+   ],
+   "size": [
+    1.6994,
+    1.9851,
+    1.6936
+   ],
+   "height": 1.9851,
+   "origin_at_base": false,
+   "pot_like_parts": [],
+   "status": "ok"
+  }
+ ]
+}

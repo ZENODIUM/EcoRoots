@@ -1,0 +1,41 @@
+/* ---------- species photo ---------- */
+.sp-photo { position: relative; margin: 0; flex: none; border-radius: 6px; overflow: visible; }
+.sp-photo img, .sp-ph { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 6px; border: 1px solid var(--rule); background: var(--surface-2); }
+.sp-xs { width: 28px; height: 28px; } .sp-sm { width: 44px; height: 44px; } .sp-md { width: 72px; height: 72px; } .sp-lg { width: 132px; height: 96px; }
+.sp-ph { display: grid; place-items: center; align-content: center; gap: 2px; color: var(--text-3); font-size: 9px; text-align: center; line-height: 1.1; padding: 2px; }
+.sp-xs .sp-ph span, .sp-sm .sp-ph span { display: none; }
+.sp-loading { background: linear-gradient(90deg, var(--surface-2), #173a2c, var(--surface-2)); background-size: 200% 100%; animation: sp-shimmer 1.4s infinite linear; }
+@keyframes sp-shimmer { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .sp-loading { animation: none; } }
+.sp-credit { all: unset; position: absolute; right: 2px; bottom: 2px; font: 600 9px/1 var(--mono); color: var(--text); background: rgba(5, 15, 11, .78); border-radius: 3px; padding: 2px 3px; cursor: pointer; }
+.sp-credit:focus-visible { outline: 1px solid var(--mineral); }
+.sp-xs .sp-credit { display: none; }
+.sp-pop { position: absolute; z-index: 30; top: calc(100% + 4px); left: 0; width: 240px; font-size: 11px; line-height: 1.4; color: var(--text-2);
+  background: #0b1c16; border: 1px solid var(--rule-strong); border-radius: 6px; padding: 8px 10px; box-shadow: 0 10px 24px rgba(0, 0, 0, .6); }
+.sp-pop b { color: var(--text); }
+.dim { color: var(--text-3); }
+
+/* ---------- expert drawer ---------- */
+.expert { border-top: 1px solid var(--rule); margin-top: 10px; }
+.expert-toggle { all: unset; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 9px 0; font: 500 11px/1 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--mineral); }
+.expert-toggle svg { transition: transform .15s; }
+.expert.open .expert-toggle svg { transform: rotate(90deg); }
+.expert-toggle:focus-visible { outline: 1px solid var(--mineral); outline-offset: 2px; }
+.expert-body { padding: 4px 0 10px; font-size: 12.5px; color: var(--text-2); }
+
+/* ---------- simple line chart ---------- */
+.slc { margin: 0; }
+.slc svg { width: 100%; height: auto; display: block; }
+.slc-grid { stroke: var(--rule); stroke-width: 1; }
+.slc-base { stroke: var(--text-3); stroke-dasharray: 2 3; }
+.slc-tick { font: 10px var(--mono); fill: var(--text-3); }
+.slc-axis { font: 11px var(--sans); fill: var(--text-2); }
+.slc-marker { stroke: var(--amber); stroke-width: 1.5; }
+.slc-hover { stroke: var(--text-3); stroke-width: 1; }
+.slc-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 11.5px; color: var(--text-2); padding: 4px 0 0 46px; }
+.slc-legend i { display: inline-block; width: 12px; height: 3px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+
+/* ---------- pills ---------- */
+.pill { display: inline-flex; align-items: center; gap: 5px; font: 500 11px/1 var(--sans); padding: 4px 8px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.pill.good { color: var(--forest); } .pill.info { color: var(--mineral); } .pill.review { color: var(--amber); } .pill.none { color: var(--text-3); border-style: dashed; }
+.pill.bad { color: var(--coral); } .pill.flat { color: var(--moss); } .pill.unknown { color: var(--text-3); border-style: dashed; }

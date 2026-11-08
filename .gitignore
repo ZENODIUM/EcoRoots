@@ -1,0 +1,90 @@
+# EthnoHarvest: publish the application source. Scientific downloads, caches,
+# secrets, hackathon notes, and source asset libraries stay on disk.
+
+# --- secrets and local environment (never commit values) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+*.pfx
+*.p12
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.coverage.*
+*.egg-info/
+.eggs/
+
+# --- Node / frontend build ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+frontend/playwright/.cache/
+
+# --- logs, local databases, OS and editor junk ---
+*.log
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.sqlite3-journal
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.suo
+*.swp
+*.swo
+
+# --- scientific data (re-download with scripts/acquire.py and scripts/checklists.py) ---
+# COMPADRE raw files must not be redistributed (Data User Agreement).
+# WCVP bulk download is ~440 MB and is re-fetched from Kew.
+/data/
+/wcvp/
+*.RData
+*.rdata
+
+# --- source 3D libraries ---
+# Leading slash keeps these at the repo root. Windows treats Plants and plants
+# as the same name, and the copies the app serves live in frontend/public/plants/.
+/Plants/
+/Plants New/
+
+# --- generated experiment outputs (the runners live in backend/ and scripts/) ---
+/experiments/
+
+# --- notes, hackathon material, screenshots, research dumps ---
+/docs/
+/pitch_screenshots/
+ADDITIONAL_RESEARCH_FINDINGS.md
+APPLICATION_GUIDE.md
+CASE_STUDY_VALIDATION.md
+DATA_SOURCES.md
+DECISIONS.md
+DEMO_VIDEO_SCRIPT.md
+HACKATHON_DATA.md
+PITCH_DECK.md
+PRODUCT_DOCUMENTATION.md
+PROGRESS.md
+SCIENCE_VALIDATION.md
+SCIENTIFIC_ENGINE_READINESS.md
+ProductV2.txt
+app_icon.png
+frontend/README.md

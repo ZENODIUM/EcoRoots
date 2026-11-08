@@ -1,0 +1,189 @@
+/* =====================================================================================================
+   Shared UI layer: extended palette with brightness tiers, motion, cards, stat shapes, tables, book, lightbox.
+   Every animation is switched off under prefers-reduced-motion.
+   ===================================================================================================== */
+:root {
+  /* hue families, each in three brightness tiers: -hi (text on dark, highlights), base (marks, borders), -lo (fills) */
+  --sky: #7cc4f0;   --sky-hi: #b4e0ff;  --sky-lo: #1d4560;
+  --rose: #f08aa8;  --rose-hi: #ffc2d3; --rose-lo: #5c2638;
+  --gold: #f2c45a;  --gold-hi: #ffe39a; --gold-lo: #5a4416;
+  --lime: #b6e36e;  --lime-hi: #dbf7a8; --lime-lo: #3d5620;
+  --plum: #b9a4f0;  --plum-hi: #ddd2ff; --plum-lo: #3b3166;
+  --leaf: #7fd19a;  --leaf-hi: #bdf0cc; --leaf-lo: #1c4a31;
+  --clayx: #e0a27a; --clayx-hi: #ffd0b2; --clayx-lo: #57321d;
+  --grey: #9fb0a6;  --grey-hi: #d3ddd7; --grey-lo: #26332c;
+  --glow: 0 0 0 1px rgba(127, 209, 154, .25), 0 10px 30px -12px rgba(127, 209, 154, .45);
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+/* tone tokens: any element with t-<tone> gets --c, --c-hi, --c-lo */
+.t-green { --c: var(--leaf); --c-hi: var(--leaf-hi); --c-lo: var(--leaf-lo); }
+.t-sky { --c: var(--sky); --c-hi: var(--sky-hi); --c-lo: var(--sky-lo); }
+.t-gold { --c: var(--gold); --c-hi: var(--gold-hi); --c-lo: var(--gold-lo); }
+.t-rose { --c: var(--rose); --c-hi: var(--rose-hi); --c-lo: var(--rose-lo); }
+.t-plum { --c: var(--plum); --c-hi: var(--plum-hi); --c-lo: var(--plum-lo); }
+.t-lime { --c: var(--lime); --c-hi: var(--lime-hi); --c-lo: var(--lime-lo); }
+.t-clay { --c: var(--clayx); --c-hi: var(--clayx-hi); --c-lo: var(--clayx-lo); }
+.t-grey { --c: var(--grey); --c-hi: var(--grey-hi); --c-lo: var(--grey-lo); }
+
+/* ---------- ambient depth: soft colour glows behind the app instead of a flat black ---------- */
+body {
+  background:
+    radial-gradient(1200px 600px at 8% -10%, rgba(127, 209, 154, .09), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(124, 196, 240, .07), transparent 60%),
+    radial-gradient(800px 600px at 50% 120%, rgba(185, 164, 240, .06), transparent 60%),
+    var(--canvas);
+}
+#root, html[data-theme='ops'] #root { background: transparent; }
+html[data-theme='ops'] body {
+  background: radial-gradient(1000px 600px at 10% -10%, rgba(242, 196, 90, .12), transparent 60%),
+    radial-gradient(900px 600px at 100% 100%, rgba(224, 162, 122, .08), transparent 60%), var(--canvas);
+}
+.topbar { background: linear-gradient(180deg, rgba(10, 26, 18, .92), rgba(3, 10, 6, .85)); backdrop-filter: blur(8px); }
+
+/* ---------- motion ---------- */
+@keyframes k-rise { from { opacity: 0; transform: translateY(8px); } }
+@keyframes k-pop { from { opacity: 0; transform: scale(.96); } }
+@keyframes k-slide-l { from { opacity: 0; transform: translateX(18px); } }
+@keyframes k-slide-r { from { opacity: 0; transform: translateX(-18px); } }
+@keyframes k-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(127, 209, 154, .35); } 50% { box-shadow: 0 0 0 6px rgba(127, 209, 154, 0); } }
+.rise { animation: k-rise .45s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms); }
+
+/* soft hover highlight on interactive surfaces across the app */
+.pages a { position: relative; transition: color .2s, background-color .2s; border-radius: 8px 8px 0 0; }
+.pages a:hover { background: rgba(127, 209, 154, .06); }
+.pages a::after { content: ''; position: absolute; left: 14px; right: 14px; bottom: -1px; height: 2px; background: var(--forest); transform: scaleX(0); transition: transform .25s var(--ease); }
+.pages a:hover::after { transform: scaleX(.6); }
+.pages a[aria-current='page']::after { transform: scaleX(1); }
+.btn { position: relative; overflow: hidden; }
+.btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .14) 50%, transparent 70%); transform: translateX(-120%); transition: transform .5s var(--ease); pointer-events: none; }
+.btn:hover:not(:disabled)::after { transform: translateX(120%); }
+a:not(.btn) { transition: color .15s; }
+.tabs button, [role='tab'] { transition: background-color .2s, color .2s, border-color .2s, transform .15s; }
+.tabs button:hover, [role='tab']:hover { background-color: rgba(127, 209, 154, .07); }
+details > summary { cursor: pointer; transition: color .15s; }
+details > summary:hover { color: var(--text); }
+
+/* ---------- plain / scientific switch ---------- */
+.term-switch { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; font: 500 11.5px/1 var(--sans); color: var(--text-3);
+  padding: 5px 9px; border-radius: 999px; border: 1px solid var(--rule-strong); background: rgba(0, 0, 0, .25); transition: border-color .2s, background .2s; }
+.term-switch:hover { border-color: var(--forest); background: rgba(127, 209, 154, .08); }
+.term-switch:focus-visible { outline: 2px solid var(--mineral); outline-offset: 2px; }
+.term-switch span { transition: color .2s; } .term-switch span.on { color: var(--text); }
+.term-switch i { width: 30px; height: 16px; border-radius: 999px; background: var(--leaf-lo); position: relative; transition: background .25s; }
+.term-switch i b { position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--leaf); transition: transform .25s var(--ease), background .25s; }
+.term-switch[aria-checked='true'] i { background: var(--plum-lo); }
+.term-switch[aria-checked='true'] i b { transform: translateX(14px); background: var(--plum); }
+
+/* glossary term with a tooltip */
+.gl { position: relative; border-bottom: 1px dotted currentColor; cursor: help; }
+.gl:focus-visible { outline: 1px solid var(--mineral); outline-offset: 2px; }
+.gl::after { content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translate(-50%, 4px); width: max-content; max-width: 260px;
+  font: 400 11.5px/1.4 var(--sans); color: var(--text); background: #0d2219; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 7px 9px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .55); opacity: 0; pointer-events: none; transition: opacity .15s, transform .15s; z-index: 40; white-space: normal; text-transform: none; letter-spacing: 0; }
+.gl:hover::after, .gl:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- stat shapes ---------- */
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.stat { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 12px; background: linear-gradient(135deg, color-mix(in srgb, var(--c) 13%, transparent), transparent 70%);
+  border: 1px solid color-mix(in srgb, var(--c) 30%, transparent); transition: transform .2s var(--ease), box-shadow .2s, border-color .2s; animation: k-pop .4s var(--ease) both; }
+.stat:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--c) 60%, transparent); box-shadow: 0 10px 24px -14px var(--c); }
+.stat-shape { flex: none; width: 34px; height: 34px; display: grid; place-items: center; background: var(--c); color: #071108; font: 600 13px/1 var(--mono); }
+.stat-shape.s-round { border-radius: 50%; } .stat-shape.s-square { border-radius: 8px; }
+.stat-shape.s-hex { clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%); }
+.stat-shape.s-leaf { border-radius: 0 60% 0 60%; }
+.stat-v { font: 600 18px/1.1 var(--mono); color: var(--c-hi); font-variant-numeric: tabular-nums; }
+.stat-v.word { font: 600 13.5px/1.2 var(--sans); }
+.stat-l { font-size: 11.5px; color: var(--text-2); }
+.stat-h { font-size: 10.5px; color: var(--text-3); margin-top: 2px; }
+
+/* ---------- cards ---------- */
+.kgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.kcard { position: relative; background: linear-gradient(160deg, color-mix(in srgb, var(--c, var(--leaf)) 9%, var(--surface)), var(--surface) 60%);
+  border: 1px solid var(--rule); border-radius: 12px; padding: 12px 14px; transition: transform .2s var(--ease), border-color .2s, box-shadow .2s; animation: k-rise .4s var(--ease) both; }
+.kcard::before { content: ''; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px; border-radius: 0 3px 3px 0; background: var(--c, var(--leaf)); }
+.kcard:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--c, var(--leaf)) 45%, var(--rule)); box-shadow: 0 14px 30px -18px var(--c, var(--leaf)); }
+.kcard-h { display: flex; align-items: center; gap: 8px; font: 600 13px/1.25 var(--sans); color: var(--text); margin: 0 0 6px; }
+.kcard-i { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 7px; background: color-mix(in srgb, var(--c) 22%, transparent); color: var(--c-hi); font-size: 12px; flex: none; }
+.kcard p { margin: 4px 0; }
+.kcard ul { margin: 4px 0; padding-left: 18px; }
+
+/* chips in a tone */
+.tchip { display: inline-flex; align-items: center; gap: 5px; font: 500 11px/1 var(--sans); padding: 4px 8px; border-radius: 999px; color: var(--c-hi);
+  background: color-mix(in srgb, var(--c) 16%, transparent); border: 1px solid color-mix(in srgb, var(--c) 40%, transparent); white-space: nowrap; }
+.tchip::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--c); }
+
+/* meter */
+.meter { position: relative; display: inline-flex; align-items: center; width: 110px; height: 16px; border-radius: 999px; background: color-mix(in srgb, var(--c) 14%, transparent); overflow: hidden; vertical-align: middle; }
+.meter i { position: absolute; inset: 0 auto 0 0; background: linear-gradient(90deg, var(--c-lo), var(--c)); border-radius: 999px; transition: width .6s var(--ease); }
+.meter b { position: relative; margin-left: auto; padding-right: 6px; font: 600 10.5px/1 var(--mono); color: var(--text); }
+
+/* ---------- tables ---------- */
+.ktable-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 12px; background: var(--surface); }
+.ktable { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.ktable caption { text-align: left; padding: 10px 12px 4px; font: 500 10.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); }
+.ktable th { position: sticky; top: 0; background: var(--surface-2); text-align: left; padding: 0; border-bottom: 1px solid var(--rule-strong); }
+.ktable th button { all: unset; cursor: pointer; display: flex; gap: 6px; align-items: center; padding: 8px 12px; font: 500 11px/1.2 var(--sans); color: var(--text-2); width: 100%; box-sizing: border-box; }
+.ktable th button:hover { color: var(--text); background: rgba(127, 209, 154, .06); }
+.ktable th button:focus-visible { outline: 2px solid var(--mineral); outline-offset: -2px; }
+.ktable th i { font-style: normal; font-size: 9px; color: var(--text-3); }
+.ktable th.num button { justify-content: flex-end; }
+.ktable td { padding: 8px 12px; border-bottom: 1px solid var(--rule); color: var(--text-2); vertical-align: top; }
+.ktable td.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--text); }
+.ktable tbody tr { transition: background-color .15s; }
+.ktable tbody tr:nth-child(even) { background: rgba(255, 255, 255, .015); }
+.ktable tbody tr:hover { background: rgba(127, 209, 154, .07); }
+.ktable-more { margin: 6px 10px 8px; }
+
+/* ---------- book ---------- */
+.book { position: relative; border-radius: 14px; border: 1px solid var(--rule-strong); background:
+  linear-gradient(90deg, rgba(0, 0, 0, .25), transparent 4%, transparent 96%, rgba(0, 0, 0, .25)), linear-gradient(180deg, #0f2419, #0b1c14);
+  box-shadow: 0 20px 50px -30px rgba(0, 0, 0, .9), inset 0 1px 0 rgba(255, 255, 255, .04); padding: 14px 18px 12px; }
+.book-head { display: grid; grid-template-columns: auto 1fr auto auto; gap: 10px; align-items: center; border-bottom: 1px dashed var(--rule-strong); padding-bottom: 10px; margin-bottom: 12px; }
+.book-title { display: flex; gap: 8px; align-items: center; font: 400 18px/1.25 var(--serif); color: var(--text); min-width: 0; }
+.book-title > span { overflow: hidden; text-overflow: ellipsis; }
+.book-no { font-size: 11px; color: var(--text-3); }
+.book-turn { all: unset; cursor: pointer; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--rule-strong); color: var(--text-2); font-size: 18px; transition: background .2s, color .2s, transform .15s; }
+.book-turn:hover:not(:disabled) { background: rgba(127, 209, 154, .12); color: var(--text); transform: scale(1.06); }
+.book-turn:focus-visible { outline: 2px solid var(--mineral); outline-offset: 2px; }
+.book-turn:disabled { opacity: .3; cursor: default; }
+.book-page { min-height: 120px; }
+.book-page.in.fwd { animation: k-slide-l .35s var(--ease) both; }
+.book-page.in.back { animation: k-slide-r .35s var(--ease) both; }
+.book-dots { display: flex; justify-content: center; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+.book-dots button { all: unset; cursor: pointer; width: 8px; height: 8px; border-radius: 50%; background: var(--rule-strong); transition: background .2s, transform .2s, width .2s; }
+.book-dots button:hover { background: var(--green-2); transform: scale(1.3); }
+.book-dots button[aria-current='page'] { background: var(--leaf); width: 20px; border-radius: 999px; }
+.book-dots button:focus-visible { outline: 2px solid var(--mineral); outline-offset: 2px; }
+
+/* ---------- zoomable images + lightbox ---------- */
+.zoom { all: unset; position: relative; display: block; width: 100%; box-sizing: border-box; cursor: zoom-in; border-radius: inherit; overflow: hidden; }
+.zoom img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s var(--ease), filter .3s; }
+.zoom:hover img { transform: scale(1.04); filter: brightness(1.06); }
+.zoom:focus-visible { outline: 2px solid var(--mineral); outline-offset: 2px; }
+.zoom-hint { position: absolute; right: 8px; top: 8px; width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; background: rgba(0, 0, 0, .55); color: #fff; font-size: 13px; opacity: 0; transition: opacity .2s; }
+.zoom:hover .zoom-hint, .zoom:focus-visible .zoom-hint { opacity: 1; }
+.lightbox { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: rgba(2, 6, 4, .86); backdrop-filter: blur(6px); animation: k-pop .2s ease-out; padding: 20px; }
+.lightbox figure { margin: 0; max-width: min(1200px, 94vw); display: flex; flex-direction: column; gap: 10px; }
+.lightbox img { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 10px; box-shadow: 0 30px 80px rgba(0, 0, 0, .7); background: #fff1; }
+.lightbox figcaption { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; color: var(--text-2); font-size: 12.5px; }
+.lb-actions { display: flex; gap: 6px; flex: none; }
+
+/* ---------- step timeline ---------- */
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.steps > li { position: relative; display: grid; grid-template-columns: 28px 1fr; gap: 10px; animation: k-rise .35s var(--ease) both; animation-delay: calc(var(--i, 0) * 40ms); }
+.steps > li::before { content: ''; position: absolute; left: 13px; top: 28px; bottom: -10px; width: 2px; background: var(--rule-strong); }
+.steps > li:last-child::before { display: none; }
+.step-dot { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font: 600 11px/1 var(--mono); color: #071108; background: var(--c, var(--leaf)); }
+.step-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 8px 10px; transition: border-color .2s, transform .2s var(--ease); }
+.step-card:hover { border-color: color-mix(in srgb, var(--c, var(--leaf)) 50%, var(--rule)); transform: translateX(2px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise, .stat, .kcard, .steps > li, .book-page.in.fwd, .book-page.in.back, .lightbox { animation: none !important; }
+  .stat, .kcard, .step-card, .zoom img, .meter i, .btn::after, .pages a::after, .term-switch i b, .book-dots button { transition: none !important; }
+  .stat:hover, .kcard:hover, .step-card:hover, .zoom:hover img { transform: none; }
+}
+
+.gl-q { display: inline-grid; place-items: center; width: 15px; height: 15px; border-radius: 50%; font-size: 10px; font-weight: 700;
+  background: rgba(124, 196, 240, .16); color: var(--sky-hi, #9fd6f7); border: 1px solid rgba(124, 196, 240, .4); vertical-align: 1px; }
+.gl:has(.gl-q) { border-bottom: 0; }
