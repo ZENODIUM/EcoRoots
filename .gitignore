@@ -70,9 +70,12 @@ Desktop.ini
 # --- generated experiment outputs (the runners live in backend/ and scripts/) ---
 /experiments/
 
-# --- notes, hackathon material, screenshots, research dumps ---
-/docs/
-/pitch_screenshots/
+# --- notes, hackathon material, research dumps ---
+# Screenshots stay available so the README can show them.
+/docs/*
+!/docs/screenshots/
+/pitch_screenshots/*
+!/pitch_screenshots/*.png
 ADDITIONAL_RESEARCH_FINDINGS.md
 APPLICATION_GUIDE.md
 CASE_STUDY_VALIDATION.md
@@ -86,5 +89,4 @@ PROGRESS.md
 SCIENCE_VALIDATION.md
 SCIENTIFIC_ENGINE_READINESS.md
 ProductV2.txt
-app_icon.png
 frontend/README.md
