@@ -30,8 +30,6 @@ The cooperative in Jumla, in western Nepal, is an illustration of that user. It 
 
 EthnoHarvest is one local application with a globe, a population studio, a field plan, a methods page, a literature agent, and a batch record called a Harvest Passport.
 
-It is built for three people. The cooperative manager, who has to decide whether a season should go ahead. The field researcher, who has to choose what to count. The buyer or the regulator, who has to see that the papers and the plants agree.
-
 It will not print a safe harvest rate, a quota, a permit, or a medical claim. A local rate can be estimated only when six measurements from that place all exist, and even then a person has to approve it. Until then the screen says the study can describe a published scenario, and it cannot describe this hillside.
 
 Unknown is never drawn as zero. If a satellite feed, a soil service, or a token is missing, the layer says pending or unavailable.
@@ -41,6 +39,26 @@ Unknown is never drawn as zero. If a satellite feed, a soil service, or a token 
 </p>
 
 <p align="center">The globe is the front door. Pick a plant, or draw a region, and every layer has to say where it came from.</p>
+
+## Who uses it
+
+The people who run a harvest use the app. The people who need to trust that harvest later use the packet.
+
+### Practical end users
+
+These are the people who actually run a harvest. A cooperative or community manager decides whether the season should go ahead. Harvesters and local record keepers work with that manager. Together they are the people in the app.
+
+They check the name, and they see when the catalogues disagree. They see whether this population can bear a harvest. A published study can describe what happened under a treatment somewhere else. The rate for this hillside stays unknown until the local facts are filled. They pass the local gate. A local rate can be discussed only when six measurements from this place all exist, and even then a person has to approve it. They plan the take, choosing what to measure with the people and the days the team has. They keep the Harvest Passport for the batch, and the evidence packet that stays with it from preparation to transfer.
+
+Fewer harvests go ahead while a required measurement is still missing. If any of the six is missing, the screen says "not yet". That gap stays a gap. It is not stored as zero, and the app does not print a percentage to cover it. The passport and the packet are the record a buyer or a reviewer can inspect later.
+
+### Secondary end users
+
+Buyers and exporters need a provenance trail: where the batch was taken, which part was taken, and which papers belong to it. Permit and customs reviewers need the papers and the plants to agree, including the plant part and the weights. Scientists and extension workers check the numbers, the evidence tier, and whether a model was allowed to become advice. Community authorities confirm site rights and local knowledge, including collection rights and the community's consent.
+
+They use the packet. They do not operate the harvest.
+
+A buyer or a reviewer can open one batch and see the name check, the gate, the plan, the weights, and the human decision. They can see a rate left unknown because the local facts were never filled. The screen they read still says "not yet". A missing count is not drawn as zero. They can see a failed check, and a document that names a different plant part from the weigh slip. Scientists can see the tier, and that a model only result never became harvest advice. Community authorities can see that collection rights and consent were required, and that a blank answer stayed blank. The packet is the record they inspect. It is not a permit, a licence, or a certificate.
 
 ## How a harvest moves through the app
 
